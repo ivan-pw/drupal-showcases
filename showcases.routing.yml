@@ -1,0 +1,28 @@
+showcases.example:
+  path: '/showcases/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\showcases\Controller\ShowcasesController::build'
+  requirements:
+    _permission: 'access content'
+
+showcases.getList:
+  path: '/showcases/list/{params}'
+  defaults:
+    _title: 'List'
+    _controller: '\Drupal\showcases\Controller\ShowcasesController::getList'
+    params: ''
+  methods: ['GET']
+  requirements:
+    _permission: 'access content'
+    params: '[a-zA-Z]+'
+
+showcases.getSingle:
+  path: '/showcases/single/{params}'
+  defaults:
+    _title: 'Single'
+    _controller: '\Drupal\showcases\Controller\ShowcasesController::getSingle'
+  methods: ['GET']
+  requirements:
+    _permission: 'access content'
+    params: '[0-9]+'

@@ -1,0 +1,8 @@
+name: Showcases
+type: module
+description: 'Module with custom content type Showcase and some endpoints for it'
+package: Custom
+core: 8.x
+core_version_requirement: '^8 || ^9'
+dependencies:
+  - menu_ui

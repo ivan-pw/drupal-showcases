@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.showcase.field_address
+    - field.field.node.showcase.field_description
+    - field.field.node.showcase.field_facebook_url
+    - field.field.node.showcase.field_featured
+    - field.field.node.showcase.field_featured_image
+    - field.field.node.showcase.field_linked_article
+    - field.field.node.showcase.field_logo_image
+    - field.field.node.showcase.field_name
+    - field.field.node.showcase.field_short_description
+    - field.field.node.showcase.field_twitter_url
+    - node.type.showcase
+  module:
+    - user
+id: node.showcase.teaser
+targetEntityType: node
+bundle: showcase
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_description: true
+  field_facebook_url: true
+  field_featured: true
+  field_featured_image: true
+  field_linked_article: true
+  field_logo_image: true
+  field_name: true
+  field_short_description: true
+  field_twitter_url: true

@@ -1,0 +1,4 @@
+administer showcases configuration:
+  title: 'Administer showcases configuration'
+  description: 'Optional description.'
+  restrict access: true
